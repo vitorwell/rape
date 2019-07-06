@@ -8,5 +8,6 @@
 [build]
   publish = "public"
   command = "jekyll"
+[build]
   publish = "public/shopify"
   command = "python build.py"
