@@ -19,7 +19,7 @@ def generate_output(data):
     data.update(os.environ) # Expose env variables to template
     log.debug('Generating output ...')
     env = Environment(loader = FileSystemLoader('.'))
-    template = env.get_template('site/_data/index.json')
+    template = env.get_template('site/index.json')
     template.stream(data).dump('public/index.json')
 
 def load_data():
